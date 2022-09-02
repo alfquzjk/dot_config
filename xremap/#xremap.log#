@@ -1,0 +1,33 @@
+Selecting devices from the following list:
+------------------------------------------------------------------------------
+/dev/input/event0 : Sleep Button
+/dev/input/event1 : Power Button
+/dev/input/event10: HDA Intel PCH Front Mic
+/dev/input/event11: PC Speaker
+/dev/input/event12: Chicony PFU-65 USB Keyboard
+/dev/input/event13: Video Bus
+/dev/input/event14: HDA Intel PCH Rear Mic
+/dev/input/event15: HDA Intel PCH Line
+/dev/input/event16: HDA Intel PCH Line Out
+/dev/input/event17: HDA Intel PCH Front Headphone
+/dev/input/event18: HDA Intel PCH HDMI/DP,pcm=3
+/dev/input/event19: HDA Intel PCH HDMI/DP,pcm=7
+/dev/input/event2 : Power Button
+/dev/input/event20: HDA Intel PCH HDMI/DP,pcm=8
+/dev/input/event21: HDA Intel PCH HDMI/DP,pcm=9
+/dev/input/event22: HDA Intel PCH HDMI/DP,pcm=10
+/dev/input/event3 : Ducky AKKO  keyboar
+/dev/input/event4 : Ducky AKKO  keyboar Keyboard
+/dev/input/event5 : Ducky AKKO  keyboar Wireless Radio Control
+/dev/input/event6 : Ducky AKKO  keyboar
+/dev/input/event7 : LogiOps Virtual Input
+/dev/input/event8 : Logitech MX Master 2S
+------------------------------------------------------------------------------
+Selected keyboards automatically since --device options weren't specified:
+------------------------------------------------------------------------------
+/dev/input/event12: Chicony PFU-65 USB Keyboard
+/dev/input/event3 : Ducky AKKO  keyboar
+
+/dev/input/event7 : LogiOps Virtual Input
+------------------------------------------------------------------------------
+application-client: X11 (supported: true)

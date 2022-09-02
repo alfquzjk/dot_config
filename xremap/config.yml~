@@ -1,0 +1,80 @@
+modmap:
+  - name: Global
+    remap:
+      # CapsLock/Ctrl_L -> Esc
+      CapsLock: Ctrl_L
+
+#     Alt_R: Super_R
+#     Super_R: Alt_R
+
+keymap:
+  - name: Global
+    remap:
+      # Underscore without Shift
+      RO: Shift-RO
+
+  - name: Browser (modified from Default)
+    application:
+      only: [Chromium, Brave-browser, firefox]
+    remap:
+      # Emacs basic
+      C-b: { with_mark: left }
+      C-f: { with_mark: right }
+      C-p: { with_mark: up }
+      C-n: { with_mark: down }
+      M-b: { with_mark: C-left }
+      M-f: { with_mark: C-right }
+      C-g: Esc
+      C-s: C-f
+      
+      # Beginning/End of line
+      C-a: { with_mark: home }
+      C-e: { with_mark: end }
+
+      # Beginning/End of file
+      M-Shift-comma: C-home
+      M-Shift-dot: C-end
+      
+      # Kill line
+      C-k: [Shift-end, C-x, { set_mark: false }]
+
+      # Page up/down
+      M-v: { with_mark: pageup }
+      C-v: { with_mark: pagedown }
+      
+      
+      # Delete
+      C-d: [delete, { set_mark: false }]
+      M-d: [C-delete, { set_mark: false }]
+      # Mark
+      C-space: { set_mark: true }
+      
+      # Copy
+      C-w: [C-x, { set_mark: false }]
+      M-w: [C-c, { set_mark: false }]
+      C-y: [C-v, {set_mark:  false }]
+
+      # close current tab
+      M-c: C-w
+      # Next tab
+      M-n: C-tab
+      M-p: C-pageup
+      # Switch in current site
+      M-l: M-left
+      M-r: M-right
+      M-a: C-l
+      
+      C-x:
+        remap:
+          #C-x h (select all)
+          h: [C-home, C-a, { set_mark: true }]
+          # C-x C-s (save)
+          C-s: C-s
+          # C-x u (undo)
+          u: [C-z, { set_mark: false }]
+
+  - name: Google Search
+    application:
+      only: [Chromium, Brave-browser, firefox]
+    remap:
+      C-s: C-f
